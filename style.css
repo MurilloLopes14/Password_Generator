@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --primary: #8f1dd7;
+  --secondary: #4bc7f1;
+  --terciary: #eb881b;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}
+
+html {
+  background-image: url("./assets/retro-wave-4k-zx.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Poppins";
+  color: #444;
+}
+
+input:focus {
+  outline: none;
+}
+
+#register_container {
+  background: linear-gradient(180deg, var(--secondary), var(--primary));
+  border-radius: 10px;
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register_banner h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: azure;
+}
+
+#register_form {
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#register_form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+#register_form p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.form_control {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_control label {
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.form_control input {
+  border: none;
+  border-bottom: 1px solid var(--terciary);
+  padding: 0.6rem 0;
+  font-size: 1rem;
+}
+
+#open_password_modal {
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  user-select: none;
+}
+
+#open_password_modal:hover {
+  color: var(--secondary);
+}
+
+#generate_options {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--terciary);
+}
+
+#generate_options .form_control {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#generate_options label {
+  font-size: 0.8rem;
+}
+
+#generate_options input[type="text"] {
+  max-width: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#register_form #generated_password {
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#register_form #generated_password p {
+  color: var(--terciary);
+}
+
+#register_form input[type="submit"],
+#generate_options button,
+#copy_password {
+  background-color: var(--secondary);
+  color: azure;
+  opacity: 0.8;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 1.4rem;
+  max-width: 150px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: 0.4s;
+}
+
+#generate_options button {
+  background-color: var(--primary);
+  display: block;
+  margin: 0 auto;
+}
+
+#register_form input[type="submit"]:hover {
+  opacity: 1;
+}
+
+#copy_password {
+  margin: 1rem auto;
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.5rem 1rem;
+}
+
+.hide {
+  display: none;
+}
